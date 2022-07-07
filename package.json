@@ -1,0 +1,41 @@
+{
+  "name": "neominiapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start --port=8181 --reset-cache",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "16.9.0",
+    "react-native": "0.61.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "react-test-renderer": "16.9.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-import-resolver-babel-module": "^5.1.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-native": "^3.8.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+        "pre-commit": "npm run lint"
+    }
+  }
+}
